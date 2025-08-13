@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://yep7tr3pfibr"
-path="res://.godot/imported/BebasNeue-Regular.ttf-dc4a04f9d429abde2dfa730507c94839.fontdata"
+uid="uid://bimcvm61ug1rl"
+path="res://.godot/imported/PressStart2P-Regular.ttf-c7d83f2c4bd295d4c960a93a703ae2b2.fontdata"
 
 [deps]
 
-source_file="res://fonts/BebasNeue-Regular.ttf"
-dest_files=["res://.godot/imported/BebasNeue-Regular.ttf-dc4a04f9d429abde2dfa730507c94839.fontdata"]
+source_file="res://fonts/PressStart2P-Regular.ttf"
+dest_files=["res://.godot/imported/PressStart2P-Regular.ttf-c7d83f2c4bd295d4c960a93a703ae2b2.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null

@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://64jmbh4edj3w"]
+
+[ext_resource type="Script" uid="uid://df5a2dmrp0mis" path="res://scripts/pause_menu.gd" id="1_myx47"]
+[ext_resource type="Texture2D" uid="uid://dgg6e8gj42g1e" path="res://sprites/Starfield_07-512x512.png" id="2_7l7mv"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_myx47")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -384.0
+offset_right = 576.0
+offset_bottom = 384.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7l7mv")
+stretch_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.5
+offset_top = -45.0
+offset_right = 161.5
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Resume" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Resume"
+flat = true
+
+[node name="MainMenu" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Main Menu"
+flat = true
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]
